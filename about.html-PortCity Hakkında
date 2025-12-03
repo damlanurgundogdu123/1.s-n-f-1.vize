@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PortCity – Hakkında</title>
+    <style>
+        :root {
+            --bg: #fff7fb;
+            --accent: #ff8fb1;
+            --accent-soft: #ffe4f2;
+            --text-main: #374151;
+            --text-soft: #6b7280;
+            --card: #ffffff;
+            --shadow: 0 14px 30px rgba(0,0,0,0.06);
+            --radius-md: 14px;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #ffe4f2 0, #fff7fb 40%, #ffffff 100%);
+            color: var(--text-main);
+        }
+        header {
+            backdrop-filter: blur(16px);
+            background: linear-gradient(90deg, rgba(255,231,244,0.95), rgba(224,242,254,0.95));
+            border-bottom: 1px solid rgba(251,207,232,0.8);
+        }
+        .nav-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--accent);
+        }
+        nav a {
+            text-decoration: none;
+            margin-left: 16px;
+            font-size: 14px;
+            color: var(--text-soft);
+            padding: 6px 10px;
+            border-radius: 999px;
+            transition: all .2s ease;
+        }
+        nav a:hover {
+            background: var(--accent-soft);
+            color: #be123c;
+        }
+        nav a.active {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 10px 24px rgba(255,143,177,0.6);
+        }
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 26px 18px 40px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+        .lead {
+            font-size: 14px;
+            color: var(--text-soft);
+            margin-bottom: 20px;
+        }
+        .split {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 860px) {
+            .split { grid-template-columns: minmax(0,1fr); }
+        }
+        .card {
+            background: var(--card);
+            border-radius: var(--radius-md);
+            padding: 16px 18px 18px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(251,207,232,0.8);
+        }
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+            color: var(--text-soft);
+        }
+        .pill-soft {
+            display:inline-flex;
+            padding:4px 10px;
+            border-radius:999px;
+            background:#fff1f5;
+            color:#db2777;
+            font-size:11px;
+            margin-bottom:8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid rgba(209,213,219,0.9);
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background: #ffe4f2;
+            color: #9d174d;
+        }
+        ul {
+            padding-left: 18px;
+            font-size: 14px;
+            color: var(--text-soft);
+        }
+        .badges {
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:10px;
+        }
+        .badge {
+            padding:3px 8px;
+            border-radius:999px;
+            font-size:11px;
+            background:#eff6ff;
+            color:#1d4ed8;
+        }
+        footer {
+            border-top: 1px solid rgba(251,207,232,0.8);
+            padding: 16px 18px 22px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-soft);
+            background: linear-gradient(180deg, #fff0f6, #ffffff);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="logo">PortCity Marina</div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="about.html" class="active">PortCity Hakkında</a>
+            <a href="services.html">Aktiviteler &amp; Mekanlar</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>PortCity Hakkında</h1>
+    <p class="lead">
+        PortCity, yerel belediye tarafından planlanan, sürdürülebilirlik odaklı
+        <b>yeni nesil marina ve sahil yaşam alanıdır</b>. Amaç; hem bölge halkına
+        hem de turistlere soft, huzurlu ve fotojenik bir deneyim sunmaktır.
+    </p>
+
+    <section class="split">
+        <article class="card">
+            <span class="pill-soft">Vizyon &amp; Misyon</span>
+            <h2>Pastel bir sahil kasabası hayali</h2>
+            <p>
+                <i>Vizyonumuz</i>, bölgeyi Akdeniz’in pastel kasabaları ile yarışan
+                bir çekim noktası haline getirmektir.
+                <u>Misyonumuz</u> ise çevreyi koruyan, erişilebilir ve herkes için
+                güvenli bir marina alanı oluşturmak.
+            </p>
+            <ul>
+                <li>Yaya odaklı, araç trafiği minimumda tutulan bir sahil hattı.</li>
+                <li>Soft ışıklandırma ve gece güvenliğini artıran yürüyüş yolları.</li>
+                <li>Doğa ile uyumlu, gürültü kirliliğini azaltan etkinlik planlaması.</li>
+            </ul>
+            <div class="badges">
+                <span class="badge">Sürdürülebilirlik</span>
+                <span class="badge">Yerel esnaf desteği</span>
+                <span class="badge">Topluluk odaklı etkinlikler</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <span class="pill-soft">Haftalık Program</span>
+            <h2>Örnek Haftalık Etkinlik Programı</h2>
+            <p>PortCity’de örnek bir hafta, aşağıdaki gibi planlanabilir:</p>
+            <table>
+                <tr>
+                    <th>Gün</th>
+                    <th>Sabah</th>
+                    <th>Öğle</th>
+                    <th>Akşam</th>
+                </tr>
+                <tr>
+                    <td>Pazartesi</td>
+                    <td>Soft Morning Walk</td>
+                    <td>Pastel Tatlı Turu</td>
+                    <td>Akustik Canlı Müzik</td>
+                </tr>
+                <tr>
+                    <td>Çarşamba</td>
+                    <td>Sahilde Yoga</td>
+                    <td>Deniz Temizliği Etkinliği</td>
+                    <td>Gün Batımı Tekne Turu</td>
+                </tr>
+                <tr>
+                    <td>Cuma</td>
+                    <td>Bisiklet Kulübü</td>
+                    <td>Sokak Lezzetleri</td>
+                    <td>Açık Hava Film Gecesi</td>
+                </tr>
+                <tr>
+                    <td>Pazar</td>
+                    <td>Aile Pikniği</td>
+                    <td>Çocuk Atölyeleri</td>
+                    <td>Soft DJ Set</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <section style="margin-top:26px;">
+        <article class="card">
+            <span class="pill-soft">Destekleyen Kurumlar</span>
+            <h2>PortCity’yi destekleyen yapılar</h2>
+            <p>
+                PortCity projesi, birden fazla kamu kurumu ve sivil toplum kuruluşu
+                desteği ile yürütülmektedir:
+            </p>
+            <ul>
+                <li>PortCity Belediyesi</li>
+                <li>Bölgesel Turizm ve Tanıtım Müdürlüğü</li>
+                <li>Çevre ve Sürdürülebilirlik Derneği</li>
+                <li>Yerel Esnaf ve Sanatkarlar Birliği</li>
+            </ul>
+        </article>
+    </section>
+</main>
+
+<footer>
+    © 2025 PortCity Marina – Hakkında sayfası | Pastel &amp; minimal arayüz
+</footer>
+
+</body>
+</html>
