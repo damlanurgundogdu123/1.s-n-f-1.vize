@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PortCity – İletişim</title>
+    <style>
+        :root {
+            --bg: #fff7fb;
+            --accent: #a855f7;
+            --accent-soft: #f5e1ff;
+            --text-main: #374151;
+            --text-soft: #6b7280;
+            --card: #ffffff;
+            --shadow: 0 14px 30px rgba(15,23,42,0.10);
+            --radius-md: 14px;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #f5e1ff 0, #fff7fb 40%, #ffffff 100%);
+            color: var(--text-main);
+        }
+        header {
+            backdrop-filter: blur(18px);
+            background: linear-gradient(90deg, rgba(237,233,254,0.96), rgba(224,242,254,0.96));
+            border-bottom: 1px solid rgba(221,214,254,0.9);
+        }
+        .nav-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--accent);
+        }
+        nav a {
+            text-decoration: none;
+            margin-left: 16px;
+            font-size: 14px;
+            color: var(--text-soft);
+            padding: 6px 10px;
+            border-radius: 999px;
+            transition: all .2s ease;
+        }
+        nav a:hover {
+            background: var(--accent-soft);
+            color: #5b21b6;
+        }
+        nav a.active {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 10px 24px rgba(168,85,247,0.6);
+        }
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 26px 18px 40px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+        .lead {
+            font-size: 14px;
+            color: var(--text-soft);
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 880px) {
+            .grid { grid-template-columns: minmax(0,1fr); }
+        }
+        .card {
+            background: var(--card);
+            border-radius: var(--radius-md);
+            padding: 16px 18px 18px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(221,214,254,0.9);
+            margin-bottom: 18px;
+        }
+        .card h2, .card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+            color: var(--text-soft);
+        }
+        ul {
+            padding-left: 18px;
+            font-size: 14px;
+            color: var(--text-soft);
+        }
+        .pill {
+            display:inline-flex;
+            padding:4px 10px;
+            border-radius:999px;
+            background:#ede9fe;
+            color:#5b21b6;
+            font-size:11px;
+            margin-bottom:8px;
+        }
+        iframe {
+            width: 100%;
+            height: 320px;
+            border-radius: 14px;
+            border: 0;
+            box-shadow: var(--shadow);
+        }
+        .links-list a {
+            color: #5b21b6;
+            text-decoration: none;
+        }
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            border-top: 1px solid rgba(221,214,254,0.9);
+            padding: 16px 18px 22px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-soft);
+            background: linear-gradient(180deg, #ede9fe, #ffffff);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="logo">PortCity Marina</div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="about.html">PortCity Hakkında</a>
+            <a href="services.html">Aktiviteler &amp; Mekanlar</a>
+            <a href="contact.html" class="active">İletişim</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>İletişim</h1>
+    <p class="lead">
+        PortCity ile ilgili tüm soru, öneri ve rezervasyon talepleriniz için aşağıdaki
+        bilgiler üzerinden bizimle iletişime geçebilirsiniz.
+    </p>
+
+    <section class="grid">
+        <article>
+            <div class="card">
+                <span class="pill">İletişim Bilgileri</span>
+                <h2>PortCity Ziyaretçi İletişim Merkezi</h2>
+                <p><b>Adres:</b> PortCity Turistik Marina, Sahil Caddesi No:10</p>
+                <p><b>Telefon:</b> +90 (555) 123 45 67</p>
+                <p><b>E-posta:</b> info@portcitymarina.com</p>
+
+                <h3>Harici Bağlantılar</h3>
+                <ul class="links-list">
+                    <li><a href="https://www.google.com/maps" target="_blank">Google Maps</a></li>
+                    <li><a href="https://tr.wikipedia.org/wiki/Turizm" target="_blank">Wikipedia – Turizm</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">PortCity Resmi Instagram (örnek)</a></li>
+                    <li><a href="https://www.iett.istanbul/" target="_blank">Belediye Ulaşım Bilgileri</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <span class="pill">Ziyaretçi Notu</span>
+                <h3>Pastel ve sakin bir deneyim için ufak öneriler</h3>
+                <ul>
+                    <li>Gün batımından en az 30 dakika önce sahil yoluna gelin.</li>
+                    <li>Rahat yürüyüş ayakkabısı tercih edin.</li>
+                    <li>Fotoğraf için telefonunuzun şarjının dolu olduğundan emin olun.</li>
+                    <li>İlk kez geliyorsanız, danışma noktasından mini harita isteyin.</li>
+                </ul>
+            </div>
+        </article>
+
+        <aside>
+            <div class="card">
+                <span class="pill">Konum – Google Maps iframe</span>
+                <h2>PortCity Konumu</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.995590386186!2d-73.98513!3d40.75889"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p style="font-size:12px;color:var(--text-soft);margin-top:8px;">
+                    Bu iframe, ödev kapsamında örnek bir Google Maps yerleştirmesidir.
+                    Gerçek PortCity konumu daha sonra belediye tarafından güncellenecektir.
+                </p>
+            </div>
+        </aside>
+    </section>
+</main>
+
+<footer>
+    © 2025 PortCity Marina – İletişim sayfası | Pastel &amp; minimal tasarım
+</footer>
+
+</body>
+</html>
