@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PortCity – Aktiviteler &amp; Mekanlar</title>
+    <style>
+        :root {
+            --bg: #fff7fb;
+            --accent: #fb7185;
+            --accent-soft: #ffe4e6;
+            --text-main: #374151;
+            --text-soft: #6b7280;
+            --card: #ffffff;
+            --shadow: 0 14px 30px rgba(15,23,42,0.10);
+            --radius-md: 14px;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #fee2e2 0, #fff7fb 40%, #ffffff 100%);
+            color: var(--text-main);
+        }
+        header {
+            backdrop-filter: blur(18px);
+            background: linear-gradient(90deg, rgba(255,228,230,0.96), rgba(224,242,254,0.96));
+            border-bottom: 1px solid rgba(252,165,165,0.9);
+        }
+        .nav-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--accent);
+        }
+        nav a {
+            text-decoration: none;
+            margin-left: 16px;
+            font-size: 14px;
+            color: var(--text-soft);
+            padding: 6px 10px;
+            border-radius: 999px;
+            transition: all .2s ease;
+        }
+        nav a:hover {
+            background: var(--accent-soft);
+            color: #b91c1c;
+        }
+        nav a.active {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 10px 24px rgba(248,113,113,0.6);
+        }
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 26px 18px 40px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+        .lead {
+            font-size: 14px;
+            color: var(--text-soft);
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: minmax(0,1.2fr) minmax(0, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 880px) {
+            .grid { grid-template-columns: minmax(0,1fr); }
+        }
+        .card {
+            background: var(--card);
+            border-radius: var(--radius-md);
+            padding: 16px 18px 18px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(252,165,165,0.8);
+            margin-bottom: 18px;
+        }
+        .card h2, .card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+            color: var(--text-soft);
+        }
+        ul, ol {
+            padding-left: 18px;
+            font-size: 14px;
+            color: var(--text-soft);
+        }
+        .pill {
+            display:inline-flex;
+            padding:4px 10px;
+            border-radius:999px;
+            background:#fee2e2;
+            color:#b91c1c;
+            font-size:11px;
+            margin-bottom:8px;
+        }
+        .photo-card {
+            background: #ffffffcc;
+            border-radius: var(--radius-md);
+            padding: 10px 10px 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(248,187,208,0.9);
+            margin-bottom: 16px;
+        }
+        .photo-card img {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            margin-bottom: 8px;
+        }
+        .photo-caption {
+            font-size: 12px;
+            color: var(--text-soft);
+        }
+        footer {
+            border-top: 1px solid rgba(252,165,165,0.9);
+            padding: 16px 18px 22px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-soft);
+            background: linear-gradient(180deg, #fee2e2, #ffffff);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="logo">PortCity Marina</div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="about.html">PortCity Hakkında</a>
+            <a href="services.html" class="active">Aktiviteler &amp; Mekanlar</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Aktiviteler &amp; Mekanlar</h1>
+    <p class="lead">
+        PortCity’de gün boyunca; yürüyüş, bisiklet, kahve molası, tekne turu ve
+        soft gece etkinlikleri ile dolu dolu bir program oluşturabilirsiniz.
+    </p>
+
+    <section class="grid">
+        <div>
+            <article class="card">
+                <span class="pill">Sahil Yürüyüş &amp; Bisiklet Yolu</span>
+                <h2>Soft Sahil Rotası</h2>
+                <p>
+                    Deniz kenarına paralel uzanan sahil yolu, hem yürüyüş hem de bisiklet için
+                    uygundur. Yol boyunca pastel tonlarda banklar, çiçekli alanlar ve fotoğraf
+                    köşeleri bulunur.
+                </p>
+                <ul>
+                    <li>2.8 km yürüyüş parkuru</li>
+                    <li>Gölgelikli dinlenme alanları</li>
+                    <li>Deniz manzaralı foto spot’lar</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <span class="pill">Kafeler &amp; Yeme-İçme</span>
+                <h3>Butik işletmelerle dolu bir marina</h3>
+                <p>
+                    PortCity’de zincir marka yerine, yerel ve butik işletmeler
+                    ön plandadır. Her mekanın kendine ait pastel bir konsepti vardır.
+                </p>
+                <ol>
+                    <li>Marina Balık – Günlük taze deniz ürünleri</li>
+                    <li>PortCafe – Latte &amp; tatlı köşesi</li>
+                    <li>Sunset Lounge – Gün batımı içecekleri ve atıştırmalıklar</li>
+                </ol>
+            </article>
+
+            <article class="card">
+                <span class="pill">Su Sporları &amp; Deneyimler</span>
+                <h3>Denizle iç içe aktiviteler</h3>
+                <p>
+                    Deneyimli eğitmenler eşliğinde kano, paddle board, kısa tekne turları
+                    ve gece ışıklandırmalı mini turlar düzenlenmektedir.
+                </p>
+                <ul>
+                    <li>Kısa süreli tanışma turları</li>
+                    <li>Grup etkinlikleri ve özel turlar</li>
+                    <li>Fotoğraf odaklı gün batımı turları</li>
+                </ul>
+            </article>
+        </div>
+
+        <aside>
+            <div class="photo-card">
+                <img src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg"
+                     alt="Pastel tonlarda yatlar ve marina">
+                <div class="photo-caption">
+                    Pastel tonlarda ışıklandırılmış yatlar ve gece marina manzarası.
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="https://images.pexels.com/photos/185801/pexels-photo-185801.jpeg"
+                     alt="Soft renklerde sahil yürüyüş yolu">
+                <div class="photo-caption">
+                    Gün ışığında, soft renklerde tasarlanmış sahil yürüyüş rotası.
+                </div>
+            </div>
+        </aside>
+    </section>
+</main>
+
+<footer>
+    © 2025 PortCity Marina – Aktiviteler &amp; Mekanlar sayfası
+</footer>
+
+</body>
+</html>
